@@ -190,9 +190,9 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - {t: LAYER0, h: toggle}
   - $$mdi:mouse-left-click-outline$$
-  - $$mdi:apple-keyboard-shift$$
+  - '&mkp MB1'
   - {t: LAYER0, h: toggle, type: held}
-  - $$mdi:apple-keyboard-option$$
+  - '&mkp MB2'
   - '&studio_unlock'
   - $$mdi:progress-download$$
   '3':
