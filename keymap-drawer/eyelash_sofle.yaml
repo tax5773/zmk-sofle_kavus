@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: eyelash_sofle}
 layers:
-  LAYER0:
+  '0':
   - $$mdi:bluetooth-off$$
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
@@ -51,21 +51,21 @@ layers:
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - {t: '''', s: '"'}
+  - {t: /, s: '?'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:volume-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - LGUI
   - $$mdi:apple-keyboard-control$$
-  - {t: '$$mdi:keyboard-space$$', h: layer1}
+  - {t: '$$mdi:keyboard-space$$', h: '1'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-shift$$
-  - {t: '$$mdi:keyboard-return$$', h: layer2}
+  - {t: '$$mdi:keyboard-return$$', h: '2'}
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:backspace-reverse-outline$$
-  layer1:
+  '1':
   - $$mdi:keyboard-esc$$
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -86,7 +86,7 @@ layers:
   - {t: '9', s: (}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: layer1, h: toggle}
+  - {t: '1', h: toggle}
   - {t: '-', s: _}
   - $$mdi:arrow-up-bold$$
   - {t: '=', s: +}
@@ -99,7 +99,7 @@ layers:
   - {t: '6', s: ^}
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - {t: layer2, h: toggle}
+  - {t: '2', h: toggle}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
@@ -114,7 +114,7 @@ layers:
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '3', h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: \, s: '|'}
   - {t: ']', s: '}'}
   - {t: /, s: '?'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -123,14 +123,14 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-control$$
-  - {t: LAYER0, h: toggle, type: held}
+  - {t: '0', h: toggle, type: held}
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:keyboard-return$$', h: '3'}
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  layer2:
+  '2':
   - $$mdi:bluetooth-off$$
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
@@ -151,7 +151,7 @@ layers:
   - F11
   - F12
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: layer1, h: toggle}
+  - {t: '1', h: toggle}
   - '&mkp MB1'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - '&mkp MB2'
@@ -164,7 +164,7 @@ layers:
   - F7
   - F8
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - {t: layer2, h: toggle}
+  - {t: '2', h: toggle}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
@@ -188,10 +188,10 @@ layers:
   - '&studio_unlock'
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-control$$
-  - {t: LAYER0, h: toggle}
+  - {t: '0', h: toggle}
   - $$mdi:mouse-left-click-outline$$
   - '&mkp MB1'
-  - {t: LAYER0, h: toggle, type: held}
+  - {t: '0', h: toggle, type: held}
   - '&mkp MB2'
   - '&studio_unlock'
   - $$mdi:progress-download$$
@@ -253,10 +253,10 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-control$$
-  - {t: LAYER0, h: toggle, type: held}
+  - {t: '0', h: toggle, type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-shift$$
-  - {t: LAYER0, h: toggle, type: held}
+  - {t: '0', h: toggle, type: held}
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
